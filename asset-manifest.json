@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/roulette-picker/static/css/main.ad069a32.css",
+    "main.js": "/roulette-picker/static/js/main.465337c7.js",
+    "static/js/787.ea2a1c21.chunk.js": "/roulette-picker/static/js/787.ea2a1c21.chunk.js",
+    "index.html": "/roulette-picker/index.html",
+    "main.ad069a32.css.map": "/roulette-picker/static/css/main.ad069a32.css.map",
+    "main.465337c7.js.map": "/roulette-picker/static/js/main.465337c7.js.map",
+    "787.ea2a1c21.chunk.js.map": "/roulette-picker/static/js/787.ea2a1c21.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad069a32.css",
+    "static/js/main.465337c7.js"
+  ]
+}
