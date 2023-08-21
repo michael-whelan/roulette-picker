@@ -14,7 +14,7 @@ export function Modal({ name, url, onClose }: ModalProps): JSX.Element {
                 <button className="close-button" onClick={onClose}>
                     X
                 </button>
-                <h2>And the web sherriff is: {name}</h2>
+                <h2>And the web sheriff is: {name}</h2>
                 <img src={url} alt={name} />
             </div>
         </div>

@@ -4,6 +4,7 @@ import { Wheel } from "react-custom-roulette";
 import { PrizeData, RouletteForm } from "./roulette-form.tsx";
 import { Modal } from "./modal.tsx";
 import ConfettiExplosion from "confetti-explosion-react";
+import { WheelData } from "react-custom-roulette/dist/components/Wheel/types";
 
 function App(): JSX.Element {
     const [mustSpin, setMustSpin] = useState<boolean>(false);
@@ -16,9 +17,11 @@ function App(): JSX.Element {
 
     const [showModal, setShowModal] = useState<boolean>(false);
     const [audioPlaying, setAudioPlaying] = useState(false);
-    const [isExploding, setIsExploding] = React.useState(false);
+    const [isExploding, setIsExploding] = useState(false);
 
-    const [audioSong] = useState(new Audio("steam-roulette-song.mp3")); // Provide the correct path to your sound file
+    const [audioSong] = useState(
+        new Audio(require("./content/steam-roulette-song.mp3"))
+    );
 
     const startSong = useCallback(() => {
         audioSong.play();
@@ -43,7 +46,9 @@ function App(): JSX.Element {
 
     useEffect(() => {
         if (!mustSpin && spinClicked) {
-            const audioWoop = new Audio("birthday-party-horn-sound-effect.mp3");
+            const audioWoop = new Audio(
+                require("./content/birthday-party-horn-sound-effect.mp3")
+            );
             audioSong.volume = 0.5;
             setTimeout(() => {
                 stopSong();
@@ -59,21 +64,21 @@ function App(): JSX.Element {
 
     return (
         <div className={"container"}>
-            <h1>Roulette Game</h1>
+            <h1>Maintainer of the week</h1>
             <div className={"panel-container"}>
                 <div className={"panel left"}>
                     <Wheel
                         mustStartSpinning={mustSpin}
                         prizeNumber={prizeNumber}
-                        data={rouletteData}
-                        outerBorderColor={["#f2f2f2"]}
-                        outerBorderWidth={[25]}
-                        innerBorderColor={["#f2f2f2"]}
-                        radiusLineColor={["#dedede"]}
-                        radiusLineWidth={[10]}
+                        data={rouletteData as WheelData[]}
+                        outerBorderColor={"#f2f2f2"}
+                        outerBorderWidth={25}
+                        innerBorderColor={"#f2f2f2"}
+                        radiusLineColor={"#dedede"}
+                        radiusLineWidth={10}
                         textColors={["#ffffff"]}
-                        fontSize={[50]}
-                        perpendicularText={[true]}
+                        fontSize={50}
+                        perpendicularText={true}
                         backgroundColors={["#F22B35", "#24CA69"]}
                         onStopSpinning={() => {
                             setMustSpin(false);
