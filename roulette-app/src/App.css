@@ -1,0 +1,25 @@
+.App {
+    text-align: center;
+}
+
+.panel-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.panel {
+    display: inline-block;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.confetti {
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+}
