@@ -12,7 +12,7 @@ function App(): JSX.Element {
 
     const [prizeNumber, setPrizeNumber] = useState<number>(0);
     const [rouletteData, setRouletteData] = useState<PrizeData[]>([
-        { id: 0, option: "", image: null },
+        { id: Date.now(), option: "", image: null },
     ]);
 
     const [showModal, setShowModal] = useState<boolean>(false);
@@ -89,7 +89,7 @@ function App(): JSX.Element {
                     </button>
                 </div>
                 <div className={"panel right"}>
-                    <h1>Roulette Form</h1>
+                    <h1 className={"form-title"}>Roulette Form</h1>
                     <RouletteForm
                         data={rouletteData}
                         setData={setRouletteData}

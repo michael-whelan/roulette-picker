@@ -16,10 +16,17 @@
 }
 .right {
     float: right;
+    display: block;
+    width: 50%;
 }
 .confetti {
     margin: auto;
     position: absolute;
     left: 50%;
     top: 25%;
+}
+
+.form-title {
+    margin: 15px auto;
+    width: 50%;
 }
