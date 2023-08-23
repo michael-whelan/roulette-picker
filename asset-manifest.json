@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/roulette-picker/static/css/main.ce2608d2.css",
-    "main.js": "/roulette-picker/static/js/main.e449ac00.js",
+    "main.css": "/roulette-picker/static/css/main.311adedc.css",
+    "main.js": "/roulette-picker/static/js/main.bff1f089.js",
     "static/js/787.ea2a1c21.chunk.js": "/roulette-picker/static/js/787.ea2a1c21.chunk.js",
     "static/media/steam-roulette-song.mp3": "/roulette-picker/static/media/steam-roulette-song.d248660155fb5e49b136.mp3",
     "static/media/birthday-party-horn-sound-effect.mp3": "/roulette-picker/static/media/birthday-party-horn-sound-effect.93e8a9ecfe7284944b3b.mp3",
     "index.html": "/roulette-picker/index.html",
-    "main.ce2608d2.css.map": "/roulette-picker/static/css/main.ce2608d2.css.map",
-    "main.e449ac00.js.map": "/roulette-picker/static/js/main.e449ac00.js.map",
+    "main.311adedc.css.map": "/roulette-picker/static/css/main.311adedc.css.map",
+    "main.bff1f089.js.map": "/roulette-picker/static/js/main.bff1f089.js.map",
     "787.ea2a1c21.chunk.js.map": "/roulette-picker/static/js/787.ea2a1c21.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce2608d2.css",
-    "static/js/main.e449ac00.js"
+    "static/css/main.311adedc.css",
+    "static/js/main.bff1f089.js"
   ]
 }
